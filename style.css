@@ -1,0 +1,127 @@
+/* Reset simples para consistência */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ====== BASE ====== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #e6eef6, #f8f9fa);
+    padding: 20px;
+}
+
+/* ====== CONTAINER ====== */
+.container {
+    width: 100%;
+    max-width: 520px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+    transition: transform 0.2s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+}
+
+/* ====== TÍTULOS ====== */
+h2, h3 {
+    text-align: center;
+    margin-bottom: 14px;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+/* ====== FORM ELEMENTS ====== */
+input,
+select,
+button {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+/* Foco mais visível e moderno */
+input:focus,
+select:focus {
+    border-color: #2c89e8;
+    box-shadow: 0 0 0 3px rgba(44, 137, 232, 0.25);
+    outline: none;
+}
+
+/* ====== BOTÃO ====== */
+button {
+    background: #2c89e8;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+}
+
+button:hover {
+    background: #1e6fb8;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* ====== TABELA ====== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th {
+    background: #e6f1fb;
+    color: #2c89e8;
+    font-weight: bold;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #fafafa;
+}
+
+/* ====== LINKS ====== */
+a {
+    text-decoration: none;
+    color: #2c89e8;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #125a99;
+}
+
+a.sair {
+    color: #d62828;
+}
+
+a.sair:hover {
+    color: #a11212;
+}
+
+/* ====== ERRO ====== */
+.erro {
+    color: #d62828;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
